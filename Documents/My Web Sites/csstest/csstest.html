@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html lang="jp">
+    <head>
+        <meta charset="utf-8" />
+        <title>ブラウザごとに呼び出すCSSを変更する</title>
+        <link rel="stylesheet" type="text/css" href="ie.css" id="css">
+        <script type="text/javascript">
+        <!--
+            var userAgent = window.navigator.userAgent.toLowerCase();
+            if (userAgent.indexOf('opera') != -1) {
+            } else if (userAgent.indexOf('msie') != -1) {
+              document.getElementById('css').href = "ie.css";
+            } else if (userAgent.indexOf('chrome') != -1) {
+              document.getElementById('css').href = "gc.css";
+            } else if (userAgent.indexOf('safari') != -1) {
+              document.getElementById('css').href = "sa.css";
+            } else if (userAgent.indexOf('firefox') != -1) {
+              document.getElementById('css').href = "ff.css";
+            } else {
+              alert('other');
+            }        
+            // -->
+        </script>
+    </head>
+    <body>
+        <p class="test">ブラウザごと文字の色を変更します</p>            
+    </body>
+</html>
